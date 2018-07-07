@@ -14,3 +14,11 @@ h1, h2, h3 {
     font-family: cursive;
     text-align: center;
 }
+#submit{
+    color: red;
+    background-color: gold;
+}
+#results {
+    background-color: red;
+    color: gold;
+}
