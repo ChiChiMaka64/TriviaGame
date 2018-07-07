@@ -91,7 +91,6 @@ function countDown() {
     if (countDownClock === 0) {
         clearTimeout(timer);
         alert("Time's Up!");
-        //refresh page
         location.reload()
     } else {
         countDownClock--;
@@ -107,9 +106,11 @@ $("#submit").on("click", function () {
     for (var i = 0; i < HSMQuestions.length; i++) {
         var answer = $('input[name=radio-question'+ (i+1) + ']:checked').val();
         if(answer ==HSMQuestions[i].correctAnswer) {
+            alert("YOU are a true Wildcat! Show off your Wildcat Pride!");
             questionsRight++;
         }
         else {
+            alert("It's OK. Come on over to East High and we will make YOU a true Wildcat!");
             questionsWrong++;
         }
        // console.log(HSMQuestions[i].correctAnswer)
