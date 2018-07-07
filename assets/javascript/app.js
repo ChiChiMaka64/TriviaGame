@@ -84,12 +84,15 @@ var HSMQuestions = [
 
 
 
-var countDownClock = 45;
+var countDownClock = 60;
 var timerElement = document.getElementById("Timer");
 var timer = setInterval(countDown, 1000);
 function countDown() {
     if (countDownClock === 0) {
         clearTimeout(timer);
+        alert("Time's Up!");
+        //refresh page
+        location.reload()
     } else {
         countDownClock--;
         timerElement.innerHTML = "Time Remaining: " + countDownClock;
@@ -111,7 +114,7 @@ $("#submit").on("click", function () {
         }
        // console.log(HSMQuestions[i].correctAnswer)
         //   //  document.onclick = function (event) {
-        //         if (UserGuess === HSMQuestions[i].correctAnswer) {
+        //         if (UserGuess == HSMQuestions[i].correctAnswer) {
         //             alert("YOU are a true Wildcat! Show off your Wildcat Pride!");
         //             questionsRight++;
         //         }
