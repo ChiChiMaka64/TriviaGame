@@ -127,6 +127,8 @@ $("#submit").on("click", function () {
     }
    $("#RightAnswers").text(questionsRight)
    $("#WrongAnswers").text(questionsWrong)
+
+   location.reload()
 }
 );
    // countDown();
